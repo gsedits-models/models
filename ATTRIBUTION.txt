@@ -1,0 +1,20 @@
+GSEDITS upscale models - ONNX conversions
+
+These files are ONNX conversions (fp16 and fp32) made by GSEDITS of upscaling models trained and published by
+Philip Hofmann (Phhofm), https://github.com/Phhofm/models and https://huggingface.co/Phips.
+The weights are unchanged apart from the format conversion. GSEDITS downloads them from this release and checks
+every file against its SHA-256 before use.
+
+Model                                       Licence     Original
+2xNomosUni_span_multijpg_ldl                CC-BY-4.0   https://huggingface.co/Phips/2xNomosUni_span_multijpg_ldl
+2xNomosUni_compact_otf_medium               CC-BY-4.0   https://huggingface.co/Phips/2xNomosUni_compact_otf_medium
+2xPublic_realplksr_dysample_layernorm_real  Apache-2.0  https://github.com/Phhofm/models/releases/tag/2xPublic_realplksr_dysample_layernorm_real
+4xBHI_realplksr_dysample_real               CC-BY-4.0   https://huggingface.co/Phips/4xBHI_realplksr_dysample_real
+4xNomosWebPhoto_RealPLKSR                   CC-BY-4.0   https://huggingface.co/Phips/4xNomosWebPhoto_RealPLKSR
+1xDeH264_realplksr                          CC-BY-4.0   https://huggingface.co/Phips/1xDeH264_realplksr
+1xgaterv3_r_restore                         CC-BY-4.0   https://github.com/Phhofm/models/releases/tag/1xgaterv3_r_restore
+1xgaterv3_r_sharpen                         CC-BY-4.0   https://github.com/Phhofm/models/releases/tag/1xgaterv3_r_sharpen
+
+Licences: CC-BY-4.0 https://creativecommons.org/licenses/by/4.0/ , Apache-2.0 https://www.apache.org/licenses/LICENSE-2.0
+Changes made: converted from PyTorch/safetensors (or the author's fp32 ONNX) to ONNX with dynamic height and width,
+and an fp16 copy of each.
